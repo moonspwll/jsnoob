@@ -20,7 +20,7 @@ function tab(index) {
     for (let i = 0; i < tabs.length; i++) {
         tabs[i].style.display = "none";
     }
-    tabs[index].style.display = "flex";
+        tabs[index].style.display = "flex";
 }
 
 navigation.addEventListener("click", function ({ target }) {
