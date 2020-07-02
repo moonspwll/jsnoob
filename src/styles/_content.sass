@@ -1,0 +1,115 @@
+.content
+    width: 100%
+    @media screen and (max-width: 600px)
+        // overflow-y: scroll
+        scroll-behavior: smooth
+    @media screen and (max-width: 425px)
+        // overflow-y: scroll
+        scroll-behavior: smooth
+    .tab
+        width: 100%
+        padding: 100px
+        margin: auto
+        height: 100%
+        color: #fff
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: column
+        line-height: 40px
+        @media (max-width: 768px)
+            padding: 44px
+            font-size: 14px
+            line-height: 2
+    .hello-block
+        text-align: left
+        position: relative
+        min-width: 80%
+        min-height: 50%
+        @media screen and (max-width: 768px)
+            height: 100vh
+        &__text
+            position: relative
+            display: inline
+            z-index: 10
+            &::after
+                content: "|"
+                display: inline
+                animation: blink 0.7s infinite
+            @media screen and (max-width: 768px)
+                padding: 5px
+                border: 2px dashed yellow
+
+    @keyframes blink
+        0%
+            opacity: 1
+        50%
+            opacity: 0
+        100%
+            opacity: 1
+
+    .about-me
+        background-color: #173538
+        display: none
+        position: relative
+        @media screen and (max-width: 768px)
+            height: 100vh
+        @media screen and (max-width: 600px)
+            display: flex
+            justify-content: space-between
+        @media screen and (max-width: 425px)
+            display: flex
+            justify-content: space-between
+    .skills
+        display: none
+        @media screen and (max-width: 768px)
+            height: 100vh
+        @media screen and (max-width: 600px)
+            justify-content: space-evenly
+            display: flex
+        @media screen and (max-width: 425px)
+            justify-content: space-evenly
+            display: flex
+    .projects
+        display: none
+        background-color: #739083
+        @media screen and (max-width: 768px)
+            height: 100vh
+        @media screen and (max-width: 600px)
+            justify-content: space-evenly
+            display: flex
+        @media screen and (max-width: 425px)
+            justify-content: space-evenly
+            display: flex
+    .about-me
+        display: none
+        text-align: justify
+        @media screen and (max-width: 768px)
+            height: 100vh
+        @media screen and (max-width: 600px)
+            display: flex
+            justify-content: space-evenly
+        @media screen and (max-width: 425px)
+            display: flex
+            justify-content: space-evenly
+    .contacts
+        display: none
+        align-items: flex-start
+        background-color: #162439
+        @media screen and (max-width: 768px)
+            height: 100vh
+        @media screen and (max-width: 600px)
+            justify-content: space-evenly
+            display: flex
+        @media screen and (max-width: 425px)
+            justify-content: space-evenly
+            display: flex
+        @media screen and (max-width: 400px)
+            display: none
+        a
+            color: pink
+            text-decoration: none
+    .text
+        text-align: center
+.active
+    display: flex

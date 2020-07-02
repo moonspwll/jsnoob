@@ -1,0 +1,81 @@
+.sidebar
+    position: relative
+    width: 300px
+    height: 100%
+    border-right: 1px solid gray
+    padding: 30px 20px 30px 20px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    background-image: url("../img/bg-1.gif")
+    background-repeat: no-repeat
+    background-size: cover
+    @media screen and (max-width: 600px)
+        width: 100%
+        text-align: center
+    @media screen and (max-width: 425px)
+        width: 100%
+        text-align: center
+    .avatar
+        width: auto
+        overflow: hidden
+        text-align: center
+        @media screen and (max-width: 425px)
+            // width: 80%
+        &__title
+            color: #fff
+            font-size: 20px
+            @media screen and (max-width: 768px)
+                font-size: 17px
+        &__img
+            width: 60%
+            border-radius: 50%
+            transition: transform 0.3s
+            @media screen and (max-width: 600px)
+                width: 24%
+            @media screen and (max-width: 425px)
+                width: 40%
+            &:hover
+                transform: rotate(360deg)
+
+.nav-menu
+    z-index: 1
+    display: flex
+    flex-direction: column
+    width: auto
+    align-items: center
+    height: 30%
+    justify-content: space-evenly
+    &__item
+        font-family: 'Press Start 2P', cursive
+        background-color: #191f2f
+        text-decoration: none
+        font-size: 15px
+        color: white
+        transition: 0.2s
+        width: 90%
+        padding: 5px 25px 5px 25px
+        @media screen and (max-width: 768px)
+            font-size: 14px
+        @media screen and (max-width: 425px)
+            text-align: center
+        &:hover
+            text-shadow: none
+            width: 100%
+            background-color: white
+            color: black
+        &:focus
+            outline: none
+        @media screen and (max-width: 425px)
+            &:last-child
+                display: none
+
+.social
+    // margin-top: 100px
+    width: auto
+    display: flex
+    justify-content: space-evenly
+    .social__icon-ref
+        width: auto
+    .social__icon-image
+        width: 60%
